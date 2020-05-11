@@ -30,8 +30,8 @@
 
 #[doc(hidden)]
 pub use redis::{
-    Client, Commands, Connection, ErrorKind, FromRedisValue, RedisError, RedisResult, ToRedisArgs,
-    Value,
+    Client, Commands, Connection, ConnectionLike, ErrorKind, FromRedisValue, RedisError,
+    RedisResult, ToRedisArgs, Value,
 };
 
 pub use crate::commands::StreamCommands;
@@ -56,8 +56,6 @@ pub use crate::types::{
     StreamReadOptions,
     StreamReadReply,
 };
-
-pub use redis;
 
 mod commands;
 mod types;
