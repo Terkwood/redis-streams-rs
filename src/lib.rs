@@ -57,6 +57,8 @@ pub use crate::types::{
     StreamReadReply,
 };
 
+pub use redis;
+
 mod commands;
 mod types;
 
